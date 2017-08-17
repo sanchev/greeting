@@ -2,6 +2,6 @@ language: java
 before_script:
  - echo "Starting build"
 script:
- - clean compile exec:java
+ - mvn clean compile exec:java
 after_script:
  - echo "Script finished"
