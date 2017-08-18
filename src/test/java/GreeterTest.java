@@ -64,7 +64,7 @@ public class GreeterTest {
 
     @Test
     public void testGetMessage_RU() {
-        Locale locale = new Locale("ru_RU");
+        Locale locale = new Locale("ru", "RU");
         Locale.setDefault(locale);
 
         Greeter greeter = new Greeter();
@@ -75,7 +75,7 @@ public class GreeterTest {
 
     @Test
     public void testGetMessage_US() {
-        Locale locale = new Locale("en_US");
+        Locale locale = new Locale("en", "US");
         Locale.setDefault(locale);
 
         Greeter greeter = new Greeter();
