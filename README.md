@@ -4,7 +4,7 @@
 
 # Greeting Project
 
-Its a java console application that display a welcome message, depending on the current time of day. This app have english and russian localizations.
+Its a java console application that display a greeting message, depending on the current time of day. This app have english and russian localizations.
 
 ## Built With
 
