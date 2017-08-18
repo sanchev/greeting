@@ -7,6 +7,6 @@ cache:
 before_script:
  - echo "Starting build"
 script:
- - mvn clean compile exec:java
+ - mvn clean test
 after_script:
  - echo "Script finished"

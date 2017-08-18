@@ -8,12 +8,12 @@ import java.util.Calendar;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-class Greeter {
+public class Greeter {
     private static final Logger LOGGER = LogManager.getLogger(Greeter.class.getName());
 
-    enum DayPart {MORNING, DAY, EVENING, NIGHT}
+    public enum DayPart {MORNING, DAY, EVENING, NIGHT}
 
-    DayPart getDayPart(Calendar calendar) {
+    public DayPart getDayPart(Calendar calendar) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
         LOGGER.info(String.format("Time: %s", simpleDateFormat.format(calendar.getTime())));
         int hh = calendar.get(Calendar.HOUR_OF_DAY);
@@ -30,7 +30,7 @@ class Greeter {
         return dayPart;
     }
 
-    String getMessage(DayPart dayPart) {
+    public String getMessage(DayPart dayPart) {
         LOGGER.info(String.format("Locale: %s", Locale.getDefault()));
         ResourceBundle resourceBundle = ResourceBundle.getBundle("messages");
         String message = resourceBundle.getString(dayPart.toString());
